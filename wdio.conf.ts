@@ -2,6 +2,13 @@ import type { Options } from '@wdio/types'
 import { readFileSync } from 'fs'
 
 const setLogLevel = () => (process.env.DEBUG ? 'debug' : 'warn')
+const setChromeOptions = () => {
+  let chromeOptions = []
+
+  if (!process.env.DEBUG) chromeOptions.push('headless', 'disable-gpu')
+
+  return chromeOptions
+}
 
 export const config: Options.Testrunner = {
   //
@@ -64,15 +71,16 @@ export const config: Options.Testrunner = {
     {
       browserName: 'chrome',
       'goog:chromeOptions': {
-        args: ['headless', 'disable-gpu'],
+        args: setChromeOptions(),
       },
     },
-    {
-      browserName: 'firefox',
-      'moz:firefoxOptions': {
-        args: ['-headless'],
-      },
-    },
+    // Uncomment below for using Firefox
+    // {
+    //   browserName: 'firefox',
+    //   'moz:firefoxOptions': {
+    //     args: ['-headless'],
+    //   },
+    // },
   ],
 
   //
@@ -106,7 +114,7 @@ export const config: Options.Testrunner = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: 'https://www.douglas.de/de',
+  baseUrl: 'https://www.douglas.de',
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
@@ -159,7 +167,7 @@ export const config: Options.Testrunner = {
   // See the full list at http://mochajs.org/
   mochaOpts: {
     ui: 'bdd',
-    timeout: 60000,
+    timeout: process.env.DEBUG ? 300000 : 60000,
   },
 
   //
@@ -215,13 +223,7 @@ export const config: Options.Testrunner = {
    * @param {object}         browser      instance of created browser/device session
    */
   before: (capabilities, specs) => {
-    browser.url('/')
-    // Read cookies from JSON file
-    const jsonData = readFileSync('./test/helpers/cookies.json', 'utf8')
-    const cookiesArray = JSON.parse(jsonData)
-
-    // Set cookies
-    browser.setCookies(cookiesArray)
+    browser.setWindowSize(1920, 1080)
   },
   /**
    * Runs before a WebdriverIO command gets executed.

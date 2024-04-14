@@ -3,8 +3,6 @@ import acceptCookies from '../helpers/acceptCookies.ts'
 
 // following arrange/ act/ assert pattern
 describe('cookies', () => {
-  before(() => { })
-
   it('should set accepted cookies', async () => {
     // arrange
     await browser.url('/')
@@ -12,6 +10,7 @@ describe('cookies', () => {
 
     // act
     await acceptCookies()
+    await driver.pause(2000)
 
     // assert
     const cookiesAfterAccepting = await browser.getCookies()
