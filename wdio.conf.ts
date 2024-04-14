@@ -1,4 +1,5 @@
 import type { Options } from '@wdio/types'
+import { readFileSync } from 'fs'
 
 const setLogLevel = () => (process.env.DEBUG ? 'debug' : 'warn')
 
@@ -63,14 +64,14 @@ export const config: Options.Testrunner = {
     {
       browserName: 'chrome',
       'goog:chromeOptions': {
-        args: ['headless', 'disable-gpu']
-      }
+        args: ['headless', 'disable-gpu'],
+      },
     },
     {
       browserName: 'firefox',
       'moz:firefoxOptions': {
-        args: ['-headless']
-      }
+        args: ['-headless'],
+      },
     },
   ],
 
@@ -105,7 +106,7 @@ export const config: Options.Testrunner = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  // baseUrl: 'http://localhost:8080',
+  baseUrl: 'https://www.douglas.de/de',
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
@@ -149,6 +150,7 @@ export const config: Options.Testrunner = {
       'spec',
       {
         showPreface: false,
+        addConsoleLogs: true,
       },
     ],
   ],
@@ -212,8 +214,15 @@ export const config: Options.Testrunner = {
    * @param {Array.<String>} specs        List of spec file paths that are to be run
    * @param {object}         browser      instance of created browser/device session
    */
-  // before: function (capabilities, specs) {
-  // },
+  before: (capabilities, specs) => {
+    browser.url('/')
+    // Read cookies from JSON file
+    const jsonData = readFileSync('./test/helpers/cookies.json', 'utf8')
+    const cookiesArray = JSON.parse(jsonData)
+
+    // Set cookies
+    browser.setCookies(cookiesArray)
+  },
   /**
    * Runs before a WebdriverIO command gets executed.
    * @param {string} commandName hook command name

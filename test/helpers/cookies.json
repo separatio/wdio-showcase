@@ -1,0 +1,216 @@
+[
+  {
+    "name": "ncx",
+    "value": "aIQ3FQ8mW81Zsr8DXwZhwCOArWuMfIa1y1v3LowXFzs",
+    "path": "/",
+    "domain": "www.douglas.de",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "bm_mi",
+    "value": "000F27FC08742094F0A2DFE63F061F60~YAAQ92Z7XKsGksuOAQAAQyd82xeay11RZA1OaI471BJFDiClE292vG5rn+8ce7sJ/qcguSFhguntPxPOb5PFdAut3pt2LBZVeNAuPuznU6gow4GriwCQV/K8HCOVnyr3vxcimAjM6gq93Zfiof70kqZpY6BcjJuL8rP2R0ZexfzXcjPox98vccEqRg7KY4CSJSJJVNlh8hND4kwIDohbsQZv+I1+nBF0oL/0vpA+/DFO1XESjO2dCjcMe/7sPQmjg5glQ2sMsAjejBMyCJBXrC0Fo2Lk2ZwpBnDjoXlrsQpFWNRtSaUx+aXFO0Ay7MFU~1",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": true,
+    "httpOnly": false,
+    "expiry": 1713086530,
+    "sameSite": "None"
+  },
+  {
+    "name": "bm_sz",
+    "value": "4B672304A8C3A6C13A96F2ACF9D6B021~YAAQ92Z7XK0GksuOAQAAQyd82xfSkuz/ro7XFvEpnBmxM70gk+bMhI9vx/NcYjpDBC0JDWMAKSpMLVnAKBPyR61VDdISc471JJWo2JDqjP3VsIBhJiYeRgOhfyhwQYKoZMjTL8hkRf6DRK+VfxFk2awbtJxANrT08TmHrkl7noGTxvJBUQ7h92nlcSJHW8vY/mMGdf0/HBQ/uPwwLzeUi9iRBAFRGc3U6ESbNJEVd/L2wmvPrNBcGXTDXYwCMTxxMJVIQ5oUXdRZO+mNxE/UN1yiHHcT0ZZze/8P0Ol/5xPKzH1/0yqz9Swj3kFc/1Hgz1+rvmejqI2sg8CYqxCvOjwfCfGYCl0KZtZjSenK3vYWAatmodNwxOHwuVl7O9reFyKKDEi8fIaa6xzgNTLB3J0HdGe3UUWZfe0V5rF94EeDGsITsAXwuDwllQ==~3425843~3487289",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1713093730,
+    "sameSite": "None"
+  },
+  {
+    "name": "PIM-SESSION-ID",
+    "value": "ncr0Z6oY8Njs1hoP",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "AMCVS_CE025F3E56F292177F000101%40AdobeOrg",
+    "value": "1",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "bm_sv",
+    "value": "C2361AC41E2B166FEBBF21E2B40A4624~YAAQ92Z7XM0GksuOAQAAoy982xdIzM3f2STXORzqFsHHn2Bpz6fIVXbPh1MMhy6yzvDLTNGK5WK6KrkZcQYD4KSxnES5Wa1J/SCX+g54YNGZdcSVRhUsPCZcaOjtz/X2aRcLY49W/v133i/RC827bGJwO187BIZd/1pu6DosiUt39dMMt6lkF8wv3ac1xou0KUld20eF3JjOYN0jt6MDMfsi52YdVOjvRKgO+gzxVnYRAFZqhEMLPrBV2POJMaSw~1",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": true,
+    "httpOnly": false,
+    "expiry": 1713086531,
+    "sameSite": "None"
+  },
+  {
+    "name": "s_ecid",
+    "value": "MCMID%7C14876736305873501721451551978451782788",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1776151333,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "AMCV_CE025F3E56F292177F000101%40AdobeOrg",
+    "value": "-1124106680%7CMCMID%7C14876736305873501721451551978451782788%7CMCAAMLH-1713684132%7C6%7CMCAAMB-1713684132%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1713086533s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C5.2.0",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1776151333,
+    "sameSite": "None"
+  },
+  {
+    "name": "ak_bmsc",
+    "value": "9E0D7B342468E01841EFFD06754C4B8F~000000000000000000000000000000~YAAQ92Z7XMsGksuOAQAAoS982xcS6Aq5lljgf4OP1rVoVRvfq/ih6SIbBJrrHps4ikH0U2UH1PFO0wPuOjdD3FhkggsVcFEDVL/KrrS9gQFZuMKEjuMq5tZI7N1nIDiATIanr0uBrgs4G3TwL0x/AcnPVf+ATXKadP/AjnABYVPpPGNvRB9/5SCbhGlevAKk7AkZyu1ZFYSmhsJ9lOCrjlxssJtZMHY5hFPgVHFPdGvopMXDnTfsOvTy0TFCBfC1wb1Q9oNs3x2zG+QyA9tax/lLSZl7dnv5HNM2ndXBJNjfGzeeiDatjicjsvwloSHyoM5a8KuPwnm4kxaXtIizy9EUZ9m7FTiVPsiFboOb3DOap2lCtK0hfX8roIVK2glWsJKeD0OLU1SOHpoUYfqQrm85fKfHyX5WwI9aDSP9GmHWLtQh0o6FJ/aG7GgAFtbqQoAC97XTwIafLkO14kblqRaItZtaL2751vWYA49Fe5iMDZCQWsQzwv3jXVmnty5nwBnW7iqRiiUHDi2Hu084cQ1P0JWxsielnSqmicRdpKfszn0G4CHrZXJIeS0c",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1713086531,
+    "sameSite": "None"
+  },
+  {
+    "name": "ftr_blst_1h",
+    "value": "1713079333338",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1713083653,
+    "sameSite": "None"
+  },
+  {
+    "name": "akacd_PIM-prd_ah_rollout",
+    "value": "3890532132~rv=15~id=abf1723c808d142440dd1bbc8578344d",
+    "path": "/",
+    "domain": "www.douglas.de",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_teal_perf",
+    "value": "W10=",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1713081135,
+    "sameSite": "None"
+  },
+  {
+    "name": "_teal_stateVar",
+    "value": "eyJjb250ZW50X2lkIjoiSG9tZXBhZ2UiLCJjb250ZW50X2lkX2xldmVsX2FsbCI6IkhvbWVwYWdlIiwicGFnZV91cmxfaG9zdHBhdGgiOiJ3d3cuZG91Z2xhcy5kZS9kZSIsInBhZ2VfdXJsX3NlYXJjaCI6IiIsInBhZ2VfdXJsX2Z1bGxjbGVhbmVkIjoiaHR0cHM6Ly93d3cuZG91Z2xhcy5kZS9kZSIsInBhZ2VfdXJsIjoiaHR0cHM6Ly93d3cuZG91Z2xhcy5kZS9kZSIsImxvZ2luX3N0YXR1cyI6IkxvZ2dlZCBPdXQiLCJzaXRlZ3JvdXAiOiJTdGFydCJ9",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1713081135,
+    "sameSite": "None"
+  },
+  {
+    "name": "_teal_at",
+    "value": "",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1713081135,
+    "sameSite": "None"
+  },
+  {
+    "name": "akavpau_VP-ES",
+    "value": "1713079635~id=c4b4d30701ebd5eba9440d55c9f6b9ae",
+    "path": "/",
+    "domain": "www.douglas.de",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "forterToken",
+    "value": "0a31c6bced8b430dac1487fd87cc8505_1713079331936__UDF43-m4_13ck",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1747639335,
+    "sameSite": "None"
+  },
+  {
+    "name": "_teal_interactVar",
+    "value": "eyJjb250ZW50X2lkIjoiSG9tZXBhZ2UiLCJ0eXBlIjoiY2xpY2siLCJvYmplY3QiOiJidXR0b24uYWxsZV9lcmxhdWJlbiIsImVsZW1lbnQiOiJBTExFIEVSTEFVQkVOIiwicG9zaXRpb24iOiJQMCIsInBsYWNlbWVudFVSTCI6Imh0dHBzOi8vd3d3LmRvdWdsYXMuZGUvZGUifQ==",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1713081135,
+    "sameSite": "None"
+  },
+  {
+    "name": "at_check",
+    "value": "true",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "mbox",
+    "value": "session#39d740bbed0a409083ec57b8fd80d0f4#1713081196",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1713081196,
+    "sameSite": "None"
+  },
+  {
+    "name": "utag_main",
+    "value": "v_id:018edb7c31170017b08632181a3f0504e00190090086e$_sn:1$_se:3$_ss:0$_st:1713081135754$ses_id:1713079333143%3Bexp-session$_pn:1%3Bexp-session$adobe_mcid:14876736305873501721451551978451782788%3Bexp-1776193239769$dc_visit:1$dc_event:2%3Bexp-session$dc_region:eu-central-1%3Bexp-session",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1744615335,
+    "sameSite": "None"
+  },
+  {
+    "name": "abbehamics",
+    "value": "9",
+    "path": "/",
+    "domain": "www.douglas.de",
+    "secure": true,
+    "httpOnly": false,
+    "expiry": 1744615335,
+    "sameSite": "None"
+  },
+  {
+    "name": "_abck",
+    "value": "82D27B84EDD348D25395E6AF0D3104AF~-1~YAAQ92Z7XAoHksuOAQAAnDt82wsBaY/hPh7yPAmU9DfDKuJsNSTFp9STE510pr+AcBhMqVguJ5YYer1veWIxJ66HBHFR9MzT0NxwIUTwzSEMuUz/D+io3s2B1JkxSho8lcuq6RyntgVW+Ph8m6W7zspH8vB+aBRJIr8tbWSFkx1S+0zOs+KAKXlnwQRYCjoasR+MUAM9/09sJBI/G+wLARHvHLp8X5yQIzPYL3lvBCbWZAjPoNa0YN3NvpIHtHN0TzrYWQJ6dbkbHtY90DUocFia2726iJJg8pzWTEECJ0GCjR4nc3muADgqy0qyxjYNQwONe3SWr0S2abEB6tN4aAz1WtJleAvai9lxmlciXJFooxWkv/V/S+iVfW7fZrzCXP0hqrkoMAvMLcY4t58WI+rb/5/xeQ==~-1~-1~-1",
+    "path": "/",
+    "domain": ".douglas.de",
+    "secure": true,
+    "httpOnly": false,
+    "expiry": 1744615335,
+    "sameSite": "None"
+  }
+]
