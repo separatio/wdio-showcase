@@ -1,11 +1,10 @@
 import type { Options } from '@wdio/types'
-import { readFileSync } from 'fs'
 
 const setLogLevel = () => (process.env.DEBUG ? 'debug' : 'warn')
 const setChromeOptions = () => {
   let chromeOptions = []
 
-  if (!process.env.DEBUG) chromeOptions.push('headless', 'disable-gpu')
+  if (!process.env.DEBUG) chromeOptions.push('headless')
 
   return chromeOptions
 }
@@ -117,7 +116,7 @@ export const config: Options.Testrunner = {
   baseUrl: 'https://www.douglas.de',
   //
   // Default timeout for all waitFor* commands.
-  waitforTimeout: 10000,
+  waitforTimeout: 30000,
   //
   // Default timeout in milliseconds for request
   // if browser driver or grid doesn't send response
@@ -224,6 +223,14 @@ export const config: Options.Testrunner = {
    */
   before: (capabilities, specs) => {
     browser.setWindowSize(1920, 1080)
+
+    browser.addCommand(
+      'findByDataTestId',
+      async function (this: WebdriverIO.Browser, testId: string) {
+        // `this` refers to the `browser` scope
+        return this.$(`[data-testid="${testId}"]`)
+      }
+    )
   },
   /**
    * Runs before a WebdriverIO command gets executed.
