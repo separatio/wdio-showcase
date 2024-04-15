@@ -21,14 +21,18 @@ describe('search', () => {
       await $('h1=Parfüm & Düfte').waitForDisplayed()
 
       await $('div[data-testid="flags"]').click()
-      await $('a[href="/de/c/parfum/01?q=:relevance:flags:computedNewFlag"]').waitForClickable()
-      await $('a[href="/de/c/parfum/01?q=:relevance:flags:computedNewFlag"]').click()
+      await $(
+        'a[href="/de/c/parfum/01?q=:relevance:flags:computedNewFlag"]'
+      ).waitForClickable()
+      await $(
+        'a[href="/de/c/parfum/01?q=:relevance:flags:computedNewFlag"]'
+      ).click()
       await browser.keys([Key.Escape])
       await $('button=NEU').waitForDisplayed()
 
       // next I need to apply filter for classificationClassName and gender
       await $('div=Produktart').click()
-      const selector = `//a/div/div[contains(text(), '${filter.classificationClassName}')]`;
+      const selector = `//a/div/div[contains(text(), '${filter.classificationClassName}')]`
       await $(selector).waitForClickable()
       await $(selector).moveTo()
       await $(selector).click()
@@ -40,7 +44,9 @@ describe('search', () => {
       await browser.keys([Key.Escape])
       await $(`button=${filter.gender}`).waitForDisplayed()
 
-      const newItemsAmountWithFilters = await $$('div[data-testid="product-eyecatcher"]=NEU').length
+      const newItemsAmountWithFilters = await $$(
+        'div[data-testid="product-eyecatcher"]=NEU'
+      ).length
 
       expect(newItemsAmountWithFilters).toBe(filter.amount)
     })

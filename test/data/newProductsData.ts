@@ -1,6 +1,6 @@
 export interface NewProducts {
   classificationClassName: string
-  gender: string,
+  gender: string
   amount: number
 }
 
